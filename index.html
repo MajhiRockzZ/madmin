@@ -107,6 +107,21 @@
     </div>
   </section>
 
+  <!-- Preloader -->
+  <div class="loader preloader-wrapper big active">
+    <div class="spinner-layer spinner-blue-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div>
+      <div class="gap-patch">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
@@ -117,6 +132,9 @@
       $(document).ready(function () {
         // Show sections
         $('.section').fadeIn();
+
+        // Hide preloader
+        $('.loader').fadeOut();
 
         // Init side nav
         $('.button-collapse').sideNav();
