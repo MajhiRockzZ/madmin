@@ -278,6 +278,23 @@
           Materialize.toast('Comment Denied', 3000);
           e.preventDefault();
         });
+
+        // Quick Todos
+        $('#todo-form').submit(function (e) {
+          // console.log($('#todo').val());
+          const output =
+            `<li class="collection-item">
+              <div>${$('#todo').val()} 
+                <a href="#" class="secondary-content delete">
+                 <i class="material-icons">close</i>
+                </a>
+              </div>
+            </li>`;
+          $('.todos').append(output);
+
+          Materialize.toast('Todo Added', 3000)
+          e.preventDefault();
+        });
       });
     }, 1000);
   </script>
