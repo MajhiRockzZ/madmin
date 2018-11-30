@@ -296,6 +296,7 @@
       </div>
     </div>
   </div>
+
   <!-- Add User Modal -->
   <div id="user-modal" class="modal">
     <div class="modal-content">
@@ -343,6 +344,7 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script src="https://canvasjs.com/assets/script/canvasjs.min.js"> </script>
+  <script src="https://cdn.ckeditor.com/4.11.1/standard/ckeditor.js"></script>
   <script src="js/chart.js"></script>
   <script>
     // Hide Sections
@@ -357,6 +359,12 @@
 
         // Init side nav
         $('.button-collapse').sideNav();
+
+        // Init Modal
+        $('.modal').modal();
+
+        // Init Select
+        $('select').material_select();
 
         // Counter
         $('.count').each(function () {
@@ -405,6 +413,8 @@
           Materialize.toast('Todo Removed', 3000);
           e.preventDefault();
         });
+
+        CKEDITOR.replace('body');
       });
     }, 1000);
   </script>
