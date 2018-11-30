@@ -81,11 +81,40 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Web Development</td>
-                    <td>Jan 1, 2018</td>
-                    <td>
-                      <a href="details.html" class="btn blue lighten-2">Details</a>
+                    <td width="70">
+                      <img src="img/person1.jpg" alt="" class="responsive-img circle" style="width: 40px;margin-left: 10px;">
                     </td>
+                    <td>John Doe</td>
+                    <td>jdoe@gmail.com</td>
+                    <td>Jan, 1 2018</td>
+                    <td><a href="details.html" class="btn blue lighten-2">Details</a></td>
+                  </tr>
+                  <tr>
+                    <td width="70">
+                      <img src="img/person2.jpg" alt="" class="responsive-img circle" style="width: 40px;margin-left: 10px;">
+                    </td>
+                    <td>Larry Watters</td>
+                    <td>lwatters@gmail.com</td>
+                    <td>Jan, 3 2018</td>
+                    <td><a href="details.html" class="btn blue lighten-2">Details</a></td>
+                  </tr>
+                  <tr>
+                    <td width="70">
+                      <img src="img/person3.jpg" alt="" class="responsive-img circle" style="width: 40px;margin-left: 10px;">
+                    </td>
+                    <td>Susan Williams</td>
+                    <td>Susan@gmail.com</td>
+                    <td>Jan, 5 2018</td>
+                    <td><a href="details.html" class="btn blue lighten-2">Details</a></td>
+                  </tr>
+                  <tr>
+                    <td width="70">
+                      <img src="img/person4.jpg" alt="" class="responsive-img circle" style="width: 40px;margin-left: 10px;">
+                    </td>
+                    <td>Jeff Burke</td>
+                    <td>jburke@gmail.com</td>
+                    <td>Jan, 10 2018</td>
+                    <td><a href="details.html" class="btn blue lighten-2">Details</a></td>
                   </tr>
                 </tbody>
               </table>
@@ -132,20 +161,32 @@
 
   <!-- Fixed Action Button -->
   <div class="fixed-action-btn">
-    <a href="#category-modal" class="modal-trigger btn-floating btn-large red">
+    <a href="#user-modal" class="modal-trigger btn-floating btn-large red">
       <i class="material-icons">add</i>
     </a>
 
   </div>
 
-  <!-- Add Category Modal -->
-  <div id="category-modal" class="modal">
+  <!-- Add User Modal -->
+  <div id="user-modal" class="modal">
     <div class="modal-content">
-      <h4>Add Category</h4>
+      <h4>Add User</h4>
       <form>
         <div class="input-field">
-          <input type="text" id="title">
-          <label for="title">Title</label>
+          <input type="text" id="name">
+          <label for="name">Name</label>
+        </div>
+        <div class="input-field">
+          <input type="email" id="email">
+          <label for="email">Email</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="password">
+          <label for="password">Password</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="password2">
+          <label for="password2">Confirm Password</label>
         </div>
       </form>
       <div class="modal-footer">
@@ -153,6 +194,7 @@
       </div>
     </div>
   </div>
+
   <!-- Preloader -->
   <div class="loader preloader-wrapper big active">
     <div class="spinner-layer spinner-blue-only">
