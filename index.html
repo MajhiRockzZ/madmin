@@ -292,7 +292,15 @@
             </li>`;
           $('.todos').append(output);
 
-          Materialize.toast('Todo Added', 3000)
+          Materialize.toast('Todo Added', 3000);
+          e.preventDefault();
+        });
+
+        // Delete Todos
+        $('.todos').on('click', '.delete', function (e) {
+          $(this).parent().parent().remove();
+
+          Materialize.toast('Todo Removed', 3000);
           e.preventDefault();
         });
       });
