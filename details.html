@@ -23,7 +23,7 @@
         </a>
         <ul class="right hide-on-med-and-down">
           <li><a href="index.html">Dashboard</a></li>
-          <li class="active"><a href="posts.html">Posts</a></li>
+          <li><a href="posts.html">Posts</a></li>
           <li><a href="categories.html">Categories</a></li>
           <li><a href="comments.html">Comments</a></li>
           <li><a href="users.html">Users</a></li>
@@ -61,102 +61,48 @@
     </div>
   </nav>
 
-  <!-- Section: Posts -->
-  <section class="section section-posts grey lighten-4">
+  <!-- Section: Details -->
+  <section class="section section-details grey lighten-4">
     <div class="container">
       <div class="row">
         <div class="col s12">
           <div class="card">
             <div class="card-content">
-              <span class="card-title">Posts</span>
-              <table class="striped">
-                <thead>
-                  <tr>
-                    <th>Title</th>
-                    <th>Category</th>
-                    <th>Date Created</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Post One</td>
-                    <td>Web Development</td>
-                    <td>Jan 1, 2018</td>
-                    <td>
-                      <a href="details.html" class="btn blue lighten-2">Details</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Post Two</td>
-                    <td>Graphic Design</td>
-                    <td>Jan 2, 2018</td>
-                    <td>
-                      <a href="details.html" class="btn blue lighten-2">Details</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Post Three</td>
-                    <td>Web Development</td>
-                    <td>Jan 3, 2018</td>
-                    <td>
-                      <a href="details.html" class="btn blue lighten-2">Details</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Post Four</td>
-                    <td>Tech Gadgets</td>
-                    <td>Jan 5, 2018</td>
-                    <td>
-                      <a href="details.html" class="btn blue lighten-2">Details</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Post Five</td>
-                    <td>Graphic Design</td>
-                    <td>Jan 6, 2018</td>
-                    <td>
-                      <a href="details.html" class="btn blue lighten-2">Details</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Post Six</td>
-                    <td>Web Development</td>
-                    <td>Jan 7, 2018</td>
-                    <td>
-                      <a href="details.html" class="btn blue lighten-2">Details</a>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+              <div class="row">
+                <div class="col s12 m6">
+                  <span class="card-title">Post Details</span>
+                </div>
+                <div class="col s12 m6 center">
+                  <img src="img/person1.jpg" alt="" class="responsive-img circle" style="width: 40px;margin-left: 10px;">
+                  <p>Posted By John Doe</p>
+                  <p>On Jan, 12, 2018</p>
+                </div>
+              </div>
+              <form>
+                <div class="input-field">
+                  <input type="text" id="title" value="Post One">
+                  <label for="title">Title</label>
+                </div>
+                <div class="input-field">
+                  <select>
+                    <option value="" disabled>Select option</option>
+                    <option value="1" selected>Web Development</option>
+                    <option value="2">Graphic Design</option>
+                    <option value="3">Tech Gadgets</option>
+                    <option value="4">Other</option>
+                  </select>
+                  <label>Category</label>
+                </div>
+                <div class="input-field">
+                  <textarea name="body" id="body" class="materialize-textarea">
+                    This is the content for post one.
+                  </textarea>
+                </div>
+              </form>
             </div>
             <div class="card-action">
-              <ul class="pagination">
-                <li class="disabled">
-                  <a href="#!" class="blue-text">
-                    <i class="material-icons">chevron_left</i>
-                  </a>
-                </li>
-                <li class="active blue lighten-2">
-                  <a href="#!" class="white-text">1</a>
-                </li>
-                <li class="waves-effect">
-                  <a href="#!" class="blue-text">2</a>
-                </li>
-                <li class="waves-effect">
-                  <a href="#!" class="blue-text">3</a>
-                </li>
-                <li class="waves-effect">
-                  <a href="#!" class="blue-text">4</a>
-                </li>
-                <li class="waves-effect">
-                  <a href="#!" class="blue-text">5</a>
-                </li>
-                <li class="waves-effect">
-                  <a href="#!" class="blue-text">
-                    <i class="material-icons">chevron_right</i>
-                  </a>
-                </li>
-              </ul>
+              <button class="btn green">Save</button>
+              <button class="btn red">Delete</button>
             </div>
           </div>
         </div>
@@ -168,44 +114,6 @@
   <footer class="section blue darken-2 white-text center">
     <p>Madmin Panel Copyright &copy; 2018</p>
   </footer>
-
-  <!-- Fixed Action Button -->
-  <div class="fixed-action-btn">
-    <a href="#post-modal" class="modal-trigger btn-floating btn-large red">
-      <i class="material-icons">add</i>
-    </a>
-
-  </div>
-
-  <!-- Add Post Modal -->
-  <div id="post-modal" class="modal">
-    <div class="modal-content">
-      <h4>Add Post</h4>
-      <form>
-        <div class="input-field">
-          <input type="text" id="title">
-          <label for="title">Title</label>
-        </div>
-        <div class="input-field">
-          <select>
-            <option value="" disabled selected>Select option</option>
-            <option value="1">Web Development</option>
-            <option value="2">Graphic Design</option>
-            <option value="3">Tech Gadgets</option>
-            <option value="4">Other</option>
-          </select>
-          <label>Category</label>
-        </div>
-        <div class="input-field">
-          <textarea name="body" id="body" class="materialize-textarea"></textarea>
-          <label for="body">Body</label>
-        </div>
-      </form>
-      <div class="modal-footer">
-        <a href="#!" class="modal-action modal-close btn blue white-text">Submit</a>
-      </div>
-    </div>
-  </div>
 
   <!-- Preloader -->
   <div class="loader preloader-wrapper big active">
